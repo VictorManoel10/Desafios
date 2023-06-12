@@ -104,8 +104,14 @@ button.btn-luxury {
     cursor: pointer;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    padding-top: 10px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 /*Configurações de responsividade*/
 
