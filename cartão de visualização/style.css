@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+/*Configuração dos cards*/
+
+main.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+div.sedans-card {
+    background-color: #E38525;
+    width: 12rem;
+    height: 20rem;
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+div.suv-card {
+    background-color: #016871;
+    width: 12rem;
+    height: 20rem;
+    padding: 20px;
+}
+
+div.luxury-card {
+    background-color: #07423E;
+    width: 12rem;
+    height: 20rem;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*Configurações para os textos, imagens e botões dentros das divs*/
+
+img {
+    padding: 10px;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 25px;
+    height: 6rem;
+}
+
+div.btn {
+    padding-left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+button.btn-sedans {
+    color: #E38525;
+}button.btn-sedans:hover {
+    background-color: #E38525;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+button.btn-suvs {
+    color: #016871;
+}button.btn-suvs:hover {
+    background-color: #016871;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+button.btn-luxury {
+    color: #07423E;
+}button.btn-luxury:hover {
+    background-color: #07423E;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+/*Configurações de responsividade*/
+
+@media (max-width: 600px) {
+    main.cards {
+        margin: 15px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    div.sedans-card {
+        border-radius: 10px 10px 0px 0px;
+    }
+    div.luxury-card {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
