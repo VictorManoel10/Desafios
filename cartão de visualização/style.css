@@ -127,4 +127,7 @@ button.btn-luxury {
     div.luxury-card {
         border-radius: 0px 0px 10px 10px;
     }
+    div.sedans-card, div.suv-card, div.luxury-card {
+        width: 20rem;
+    }
 }
