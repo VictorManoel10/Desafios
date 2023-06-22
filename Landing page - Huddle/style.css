@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-position: -100% 55%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    width: 1350px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+header {
+    padding: 20px;
+}
+
+/*Div img*/
+
+.img {
+    margin-left: 2rem;
+}
+
+.img > img {
+    width: 600px;
+}
+
+/*Div txt*/
+
+.txt {
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.txt > h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.txt > p {
+    color: white;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.txt > button {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    padding: 10px 30px;
+    width: 10rem;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.247);
+}.txt > button:hover {
+    background-color: #E252D3;
+    cursor: pointer;
+}
+
+/*Icones de rede social*/
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 5rem;
+}
+
+.icon-social {
+    width: 40px;
+    filter: invert(100%);
+}.icon-social:hover {
+    cursor: pointer;
+    filter: hue-rotate(110deg);   
+}
+
+/*Responsividade*/
+
+@media (max-width: 681px) {
+    
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-position: 50% -80%;
+        background-size: 45rem;
+        width: 600px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img > img {
+        width: 400px;
+    }
+    .img {
+       margin: 2rem;
+    }
+    .txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .txt > h1, p {
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 480px;
+        background-size: 30rem;
+        background-position: 60% -10%;
+    }
+    .logomarca {
+        width: 200px;
+    }
+    .img > img {
+        width: 300px;
+    }
+    .txt {
+        margin: 0rem 2rem;
+    }
+    .txt > h1 {
+        width: 20rem;
+    }
+    .txt > p {
+        width: 20rem;
+    }
+}
