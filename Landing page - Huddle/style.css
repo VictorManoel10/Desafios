@@ -98,6 +98,7 @@ header {
         background-position: 50% -80%;
         background-size: 45rem;
         width: 600px;
+        overflow: visible;
     }
     main {
         display: flex;
